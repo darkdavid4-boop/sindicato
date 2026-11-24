@@ -1,0 +1,14 @@
+es\sindicato\documentacion\TipoDocumento.class
+es\sindicato\documentacion\DocumentoStorage.class
+es\sindicato\documentacion\DocumentoStorage$StoredFile.class
+es\sindicato\documentacion\DocumentacionApplication.class
+es\sindicato\documentacion\SecurityConfig.class
+es\sindicato\documentacion\OpenApiConfig.class
+es\sindicato\documentacion\DocumentoMetadataRequest.class
+es\sindicato\documentacion\DocumentoStorage$FileType.class
+es\sindicato\documentacion\Documento.class
+es\sindicato\documentacion\DocumentoResponse.class
+es\sindicato\documentacion\DocumentoService.class
+es\sindicato\documentacion\DocumentoController.class
+es\sindicato\documentacion\DocumentoService$DownloadedDocument.class
+es\sindicato\documentacion\DocumentoRepository.class

@@ -1,0 +1,30 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: documentacion-service
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 21MB
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/documentacion?createDatabaseIfNotExist=true}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  health:
+    db:
+      enabled: true
+app:
+  storage-dir: ${APP_DOCUMENTOS_DIR:uploads/documentos}
+  auth:
+    jwt-secret: ${APP_AUTH_SECRET:c2luZGljYXRvLWxvY2FsLWRldi1zZWNyZXQtMzItYnl0ZXMh}
+  storage-key: ${APP_DOCUMENTOS_KEY:}

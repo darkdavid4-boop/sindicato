@@ -1,0 +1,8 @@
+es\sindicato\noticias\NoticiaRequest.class
+es\sindicato\noticias\NoticiasSecurityConfiguration.class
+es\sindicato\noticias\Noticia.class
+es\sindicato\noticias\NoticiaController.class
+es\sindicato\noticias\NoticiaService.class
+es\sindicato\noticias\NoticiasApplication.class
+es\sindicato\noticias\NoticiaRepository.class
+es\sindicato\noticias\ActividadCreadaListener.class

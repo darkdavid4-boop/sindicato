@@ -1,0 +1,13 @@
+es\sindicato\actividades\ActividadRequest.class
+es\sindicato\actividades\Participacion.class
+es\sindicato\actividades\ActividadEventPublisher.class
+es\sindicato\actividades\ParticipacionRepository.class
+es\sindicato\actividades\ActividadesSecurityConfiguration.class
+es\sindicato\actividades\EstadoActividad.class
+es\sindicato\actividades\ParticipacionRequest.class
+es\sindicato\actividades\ActividadesApplication.class
+es\sindicato\actividades\Actividad.class
+es\sindicato\actividades\ActividadController.class
+es\sindicato\actividades\ActividadService.class
+es\sindicato\actividades\ActividadRepository.class
+es\sindicato\actividades\EstadoParticipacion.class

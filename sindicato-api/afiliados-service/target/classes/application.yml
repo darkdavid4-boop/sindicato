@@ -1,0 +1,45 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: afiliados-service
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/afiliados?createDatabaseIfNotExist=true}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  kafka:
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:kafka:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  health:
+    db:
+      enabled: true
+resilience4j:
+  circuitbreaker:
+    instances:
+      afiliadosKafka:
+        sliding-window-size: 5
+        minimum-number-of-calls: 3
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+app:
+  public-url: ${APP_PUBLIC_URL:http://localhost:8081}
+  upload-dir: ${APP_UPLOAD_DIR:uploads}
+  auth:
+    jwt-secret: ${APP_AUTH_SECRET:c2luZGljYXRvLWxvY2FsLWRldi1zZWNyZXQtMzItYnl0ZXMh}
+  security:
+    admin-emails: ${APP_ADMIN_EMAILS:}

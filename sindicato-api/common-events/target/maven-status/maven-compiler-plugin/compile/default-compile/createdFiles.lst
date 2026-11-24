@@ -1,0 +1,10 @@
+es\sindicato\events\ParticipacionEvent.class
+es\sindicato\common\ApiExceptionHandler.class
+es\sindicato\events\EstadoAfiliadoEvent.class
+es\sindicato\common\ImageStorageConfiguration.class
+es\sindicato\events\NoticiaPublicadaEvent.class
+es\sindicato\events\ActividadCreadaEvent.class
+es\sindicato\events\BajaSolicitadaEvent.class
+es\sindicato\common\ImageStorage.class
+es\sindicato\events\AfiliadoCreadoEvent.class
+es\sindicato\common\ApiException.class

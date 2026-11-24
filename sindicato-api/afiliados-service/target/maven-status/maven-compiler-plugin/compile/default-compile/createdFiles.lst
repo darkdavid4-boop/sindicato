@@ -1,0 +1,13 @@
+es\sindicato\afiliados\AfiliadoService.class
+es\sindicato\afiliados\AuthenticationService.class
+es\sindicato\afiliados\Afiliado.class
+es\sindicato\afiliados\AfiliadoController.class
+es\sindicato\afiliados\AfiliadosApplication.class
+es\sindicato\afiliados\AfiliadoEventPublisher.class
+es\sindicato\afiliados\AfiliadoRequest.class
+es\sindicato\afiliados\AfiliadosSecurityConfiguration.class
+es\sindicato\afiliados\SessionResponse.class
+es\sindicato\afiliados\AfiliadosOpenApiConfiguration.class
+es\sindicato\afiliados\LoginRequest.class
+es\sindicato\afiliados\AfiliadoRepository.class
+es\sindicato\afiliados\EstadoAfiliado.class
